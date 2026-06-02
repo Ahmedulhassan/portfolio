@@ -3,21 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Todo App</title>
+<title>Ahmed Akram Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Todo App</h1>
+<header>
+    <h2>Ahmed Akram</h2>
 
-    <div class="input-area">
-        <input type="text" id="todoInput" placeholder="Enter a task">
-        <button onclick="addTodo()">Add</button>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+        <button id="themeBtn">🌙</button>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <img src="images/profile.jpg" alt="Ahmed Akram">
+
+    <h1>Hello, I'm Ahmed Akram</h1>
+
+    <p>
+        Front-End Developer | C++ Learner | Technology Enthusiast
+    </p>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am passionate about web development and software engineering.
+        I enjoy creating responsive websites and learning modern technologies.
+    </p>
+
+</section>
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span>HTML</span>
+        <div class="bar"><div class="progress html"></div></div>
     </div>
 
-    <ul id="todoList"></ul>
-</div>
+    <div class="skill">
+        <span>CSS</span>
+        <div class="bar"><div class="progress css"></div></div>
+    </div>
+
+    <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar"><div class="progress js"></div></div>
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+
+            <p>Responsive portfolio website using HTML, CSS and JavaScript.</p>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+            </div>
+
+            <a href="#">GitHub Repository</a>
+        </div>
+
+        <div class="card">
+            <h3>Todo App</h3>
+
+            <p>Task management application with CRUD functionality.</p>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
+            <a href="#">GitHub Repository</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+    <p class="email">
+        Email: ahmedikramulhaq12356@gmail.com
+    </p>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Ahmed Akram | All Rights Reserved
+    </p>
+
+</footer>
 
 <script src="script.js"></script>
 
